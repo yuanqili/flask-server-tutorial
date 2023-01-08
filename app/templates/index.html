@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>My first homepage</title>
+</head>
+<body>
+
+<h1>Hello, {{ username }}</h1>
+
+{% if show_detail %}
+<h2>My first homepage</h2>
+<p>My first paragraph.</p>
+{% else %}
+<p>Detail has been disabled.</p>
+{% endif %}
+
+{% for post in posts %}
+<h2>{{ post.author }}</h2>
+<p>{{ post.content }}</p>
+{% endfor %}
+
+</body>
+</html>

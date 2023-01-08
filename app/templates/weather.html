@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>天气预报</title>
+</head>
+<body>
+    <h1>
+        {{ city }} 天气预报
+    </h1>
+
+    <ul>
+        {% for day in data %}
+        <li>
+            <strong>{{ day.fxDate }}</strong>: {{ day.tempMin }} ~ {{ day.tempMax }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
