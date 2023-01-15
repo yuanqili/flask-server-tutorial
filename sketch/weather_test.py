@@ -25,4 +25,3 @@ if __name__ == '__main__':
         print('query failed')
 
     pprint(data['daily'])
-

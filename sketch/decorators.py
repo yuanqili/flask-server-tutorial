@@ -1,6 +1,6 @@
+import functools
 import random
 import time
-import functools
 
 
 def debugger(func):

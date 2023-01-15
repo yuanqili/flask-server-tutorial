@@ -14,8 +14,8 @@
 {% endif %}
 
 {% for post in posts %}
-<h2>{{ post.author }}</h2>
-<p>{{ post.content }}</p>
+<h2>{{ post.author.username }}</h2>
+<p>{{ post.body }}</p>
 {% endfor %}
 
 </body>
